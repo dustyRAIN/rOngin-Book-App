@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationBookRequestDeniedActivity"
+    android:background="@drawable/bg_basic_bright">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary25percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/noti_book_req_den_greet_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:text="Hey,"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/v1_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h1_guideline" />
+
+        <TextView
+            android:id="@+id/noti_book_req_den_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="has denied your request for a book."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintStart_toEndOf="@id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/noti_book_req_den_greet_user" />
+
+
+        <TextView
+            android:id="@+id/noti_lebel_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="book"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/h2_guideline" />
+
+        <TextView
+            android:id="@+id/noti_book_req_den_book_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="start"
+            android:text="A Tale of Two Cities"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+
+        <TextView
+            android:id="@+id/noti_lebel_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="author(s)"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider2"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider2"
+            app:layout_constraintTop_toTopOf="@+id/view_divider2" />
+
+        <View
+            android:id="@+id/view_divider2"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/noti_book_req_den_book_name" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/h3_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider2"
+            app:layout_constraintTop_toBottomOf="@+id/noti_book_req_den_book_name">
+
+            <TextView
+                android:id="@+id/noti_book_req_den_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="top|start"
+                android:text="Chares Dickens"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/noti_lebel_denied_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="denied by"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider3"
+            app:layout_constraintStart_toStartOf="@+id/view_divider3"
+            app:layout_constraintTop_toTopOf="@+id/view_divider3" />
+
+        <View
+            android:id="@+id/view_divider3"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h3_guideline" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/noti_req_den_pro_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_default_pro_pic" />
+
+        <TextView
+            android:id="@+id/noti_req_den_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/noti_req_den_pro_pic"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintStart_toEndOf="@+id/noti_req_den_pro_pic"
+            app:layout_constraintTop_toBottomOf="@+id/noti_req_den_pro_pic" />
+
+
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".08" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".65"/>
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".06" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".28" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".88" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

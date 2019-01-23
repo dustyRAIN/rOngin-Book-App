@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_basic"
+    tools:context=".GetEmailAddressActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/email_lebel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:gravity="center_vertical|start"
+                android:text="Email address:"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_email_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/arima_madurai_black"
+                android:hint="_____________________________________"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="@+id/email_lebel"
+                app:layout_constraintStart_toStartOf="@+id/email_lebel"
+                app:layout_constraintTop_toBottomOf="@+id/email_lebel" />
+
+            <TextView
+                android:id="@+id/re_email_lebel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:gravity="center_vertical|start"
+                android:text="Retype email address:"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_email_address" />
+
+            <EditText
+                android:id="@+id/re_edit_email_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/arima_madurai_black"
+                android:hint="_____________________________________"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="@+id/re_email_lebel"
+                app:layout_constraintStart_toStartOf="@+id/re_email_lebel"
+                app:layout_constraintTop_toBottomOf="@+id/re_email_lebel" />
+
+
+            <TextView
+                android:id="@+id/eight_char_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:gravity="center_vertical|start"
+                android:text="(at least 8 characters)"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/pass_lebel"
+                app:layout_constraintTop_toBottomOf="@+id/re_edit_email_address" />
+
+            <TextView
+                android:id="@+id/pass_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:gravity="center_vertical|start"
+                android:text="Password:"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/re_edit_email_address" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/arima_madurai_black"
+                android:hint="_____________________________________"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/pass_lebel"
+                app:layout_constraintTop_toBottomOf="@+id/pass_lebel" />
+
+            <TextView
+                android:id="@+id/re_pass_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:gravity="center_vertical|start"
+                android:text="Retype password:"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+            <EditText
+                android:id="@+id/re_edit_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/arima_madurai_black"
+                android:hint="_____________________________________"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/re_pass_lebel"
+                app:layout_constraintTop_toBottomOf="@+id/re_pass_lebel" />
+
+            <TextView
+                android:id="@+id/button_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/touch_selector_perfect_red_background"
+                android:fontFamily="@font/pt_sans_bold"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Confirm"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/re_edit_password" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

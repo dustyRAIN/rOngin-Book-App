@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search"
+        android:id="@+id/menu_item_search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"/>
+
+    <item
+        android:title="My Profile"
+        android:id="@+id/menu_item_show_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Feedback"
+        android:id="@+id/menu_item_feedback"
+        app:showAsAction="never"
+        android:orderInCategory="50"/>
+
+    <item
+        android:title="Sign Out"
+        android:id="@+id/menu_item_sign_out"
+        app:showAsAction="never"
+        android:orderInCategory="51"/>
+
+    <item
+        android:title="About Us"
+        android:id="@+id/menu_item_about_us"
+        app:showAsAction="never"
+        android:orderInCategory="52"/>
+
+</menu>

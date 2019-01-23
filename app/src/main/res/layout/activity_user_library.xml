@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_basic"
+    tools:context=".UserLibraryActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/user_lib_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabBackground="@drawable/tab_color"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorTabIndicator"
+        app:tabIndicatorHeight="8dp"
+        app:tabMode="fixed"
+        app:tabMaxWidth="0dp"
+        app:tabSelectedTextColor="@color/colorWhiteAAA"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/colorWhiteAAA" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_lib_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_lib_tab_layout" />
+
+</android.support.constraint.ConstraintLayout>

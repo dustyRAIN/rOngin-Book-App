@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_basic">
+
+    <View
+        android:id="@+id/view_trans_upper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorUpperBG"
+        app:layout_constraintBottom_toTopOf="@id/view_trans_lower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <View
+        android:id="@+id/view_trans_lower"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorLowerBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_trans_upper"
+        app:layout_constraintVertical_weight="1" />
+
+    <View
+        android:id="@+id/user_info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="4"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorTransPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trans_upper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_qoute_source"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_qoute"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/galada"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Books are a uniquely portable magic."
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_qoute_source"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_weight="6" />
+
+    <TextView
+        android:id="@+id/tv_qoute_source"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/galada"
+        android:paddingBottom="8dp"
+        android:text="- Stephen King"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/user_info_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qoute"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintVertical_weight="2" />
+
+    <View
+        android:id="@+id/v_pp_name_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_info_bg"
+        app:layout_constraintStart_toStartOf="@id/user_info_bg"
+        app:layout_constraintEnd_toStartOf="@id/v_bell_msg_bg"
+        app:layout_constraintTop_toTopOf="@+id/user_info_bg"
+        app:layout_constraintHorizontal_weight="3"/>
+
+    <View
+        android:id="@+id/v_bell_msg_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_info_bg"
+        app:layout_constraintStart_toEndOf="@id/v_pp_name_bg"
+        app:layout_constraintTop_toTopOf="@+id/user_info_bg"
+        app:layout_constraintEnd_toEndOf="@id/user_info_bg"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_pro_pic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_pp_name_bg"
+        app:layout_constraintEnd_toStartOf="@+id/tv_user_name"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/v_pp_name_bg"
+        app:layout_constraintTop_toTopOf="@+id/v_pp_name_bg"
+        app:srcCompat="@drawable/ic_default_pro_pic" />
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/v_pp_name_bg"
+        app:layout_constraintEnd_toEndOf="@+id/v_pp_name_bg"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/iv_pro_pic"
+        app:layout_constraintTop_toTopOf="@+id/v_pp_name_bg" />
+
+
+    <ImageView
+        android:id="@+id/iv_ic_bell"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_bell_msg_bg"
+        app:layout_constraintEnd_toStartOf="@+id/iv_ic_message"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/v_bell_msg_bg"
+        app:layout_constraintTop_toBottomOf="@+id/v_bell_msg_bg"
+        app:srcCompat="@drawable/ic_notification" />
+
+    <ImageView
+        android:id="@+id/iv_ic_message"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_bell_msg_bg"
+        app:layout_constraintEnd_toEndOf="@+id/v_bell_msg_bg"
+        app:layout_constraintStart_toEndOf="@id/iv_ic_bell"
+        app:layout_constraintTop_toBottomOf="@+id/v_bell_msg_bg"
+        app:srcCompat="@drawable/ic_message" />
+
+
+    <View
+        android:id="@+id/view_libs_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_trans_lower"
+        app:layout_constraintBottom_toTopOf="@+id/view_update_area"
+        app:layout_constraintVertical_weight="7"/>
+
+    <View
+        android:id="@+id/view_update_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorUpdateBG"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trans_lower"
+        app:layout_constraintEnd_toEndOf="@id/view_trans_lower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_libs_area"
+        app:layout_constraintVertical_weight="4" />
+
+    <TextView
+        android:id="@+id/tvb_rogin_lib"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorUpdateBG"
+        android:fontFamily="@font/arima_madurai_black"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="rOngin Library"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_libs_area"
+        app:layout_constraintEnd_toStartOf="@id/tvb_user_lib"
+        app:layout_constraintStart_toStartOf="@id/view_libs_area"
+        app:layout_constraintTop_toTopOf="@+id/view_libs_area" />
+
+
+    <TextView
+        android:id="@+id/tvb_user_lib"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorUpdateBG"
+        android:fontFamily="@font/arima_madurai_black"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="My Library"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_libs_area"
+        app:layout_constraintEnd_toEndOf="@id/view_libs_area"
+        app:layout_constraintStart_toEndOf="@+id/tvb_rogin_lib"
+        app:layout_constraintTop_toTopOf="@+id/view_libs_area" />
+
+    <TextView
+        android:id="@+id/notification_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:fontFamily="@font/pt_sans_bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="1dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:text="!"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_ic_bell"
+        app:layout_constraintTop_toTopOf="@+id/iv_ic_bell" />
+
+    <TextView
+        android:id="@+id/message_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/holo_red_dark"
+        android:fontFamily="@font/pt_sans_bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="1dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:text="!"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_ic_message"
+        app:layout_constraintTop_toTopOf="@+id/iv_ic_message" />
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/quote_description_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_basic_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cancel_quote_desc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/quote_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/pt_sans"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=";jfn;wnfw'ne'w"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_quote_desc" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/update_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_update_area"
+        app:layout_constraintEnd_toEndOf="@+id/view_update_area"
+        app:layout_constraintStart_toStartOf="@+id/view_update_area"
+        app:layout_constraintTop_toTopOf="@+id/view_update_area" />
+
+
+</android.support.constraint.ConstraintLayout>

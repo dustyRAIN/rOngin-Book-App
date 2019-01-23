@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowedBookDetailsActivity"
+    android:background="@drawable/bg_basic">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUpdateBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/h1_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h2_guideline">
+
+            <TextView
+                android:id="@+id/borrow_details_headings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Please return the book in due time, other wise your account will be frozen until you returned the book."
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/lebel_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="book"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h1_guideline" />
+
+        <TextView
+            android:id="@+id/borrow_details_book_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="start"
+            android:text="A Tale of Two Cities"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+
+        <TextView
+            android:id="@+id/lebel_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="author(s)"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider2"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider2"
+            app:layout_constraintTop_toTopOf="@+id/view_divider2" />
+
+        <View
+            android:id="@+id/view_divider2"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/borrow_details_book_name" />
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/h3_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider2"
+            app:layout_constraintTop_toBottomOf="@+id/borrow_details_book_name">
+
+            <TextView
+                android:id="@+id/borrow_details_author"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="top|start"
+                android:text="Chares Dickens"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/borrow_details_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/touch_selector_black_background"
+            android:fontFamily="@font/pt_sans_bold"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Return"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/borrow_details_false"
+            app:layout_constraintTop_toTopOf="@+id/h4_guideline"
+            app:layout_constraintVertical_bias="0.1000000" />
+
+        <TextView
+            android:id="@+id/borrow_details_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/touch_selector_black_background"
+            android:fontFamily="@font/pt_sans_bold"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Increase Day Limit"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/borrow_details_true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/h4_guideline"
+            app:layout_constraintVertical_bias="0.1000000" />
+
+
+        <TextView
+            android:id="@+id/lebel_lent_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="lent by"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider3"
+            app:layout_constraintStart_toStartOf="@+id/view_divider3"
+            app:layout_constraintTop_toTopOf="@+id/view_divider3" />
+
+        <View
+            android:id="@+id/view_divider3"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h3_guideline" />
+
+
+        <ImageView
+            android:id="@+id/borrow_details_pro_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/h4_guideline"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_default_pro_pic" />
+
+        <TextView
+            android:id="@+id/borrow_details_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/borrow_details_pro_pic"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintStart_toEndOf="@+id/borrow_details_pro_pic"
+            app:layout_constraintTop_toBottomOf="@+id/borrow_details_pro_pic" />
+
+
+        <TextView
+            android:id="@+id/lebel_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="days left"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider4"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider4"
+            app:layout_constraintTop_toTopOf="@+id/view_divider4" />
+
+        <View
+            android:id="@+id/view_divider4"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/h5_guideline" />
+
+        <TextView
+            android:id="@+id/borrow_details_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="start"
+            android:text="7 days"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider4"
+            app:layout_constraintTop_toTopOf="@+id/view_divider4" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h4_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".80" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.70" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".06" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".28" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".88" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

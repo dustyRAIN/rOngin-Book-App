@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.creation.daguru.ronginbookapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDHWRg9FXAgduPP0eJugVH39S2QX36QQ24" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".GetUserInfoActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".RonginLibraryActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".UserLibraryActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SingleOwnerBookDetailsActivity" />
+        <activity android:name=".MultiOwnersBookDetailsActivity" />
+        <activity
+            android:name=".BookSearchActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".NotificationGeneralActivity" />
+        <activity android:name=".NotificationBookAddedActivity" />
+        <activity android:name=".NotificationBookConfirmActivity" />
+        <activity android:name=".NotificationBookRequestActivity" />
+        <activity android:name=".NotificationBookRequestAcceptedActivity" />
+        <activity android:name=".NotificationBookRequestDeniedActivity" />
+        <activity android:name=".NotificationDayRequestActivity" />
+        <activity android:name=".NotificationDayRequestAcceptedActivity" />
+        <activity android:name=".NotificationDayRequestDeniedActivity" />
+        <activity android:name=".NotificationReturnBookActivity" />
+        <activity android:name=".NotificationAccountFreezedActivity" />
+        <activity android:name=".NotificationBookGivingRequestActivity" />
+        <activity android:name=".NotificationBookReceivedActivity" />
+        <activity android:name=".NotificationReceiveReturnedBookActivity" />
+        <activity android:name=".LentBookDetailsActivity" />
+        <activity android:name=".BorrowedBookDetailsActivity" />
+        <activity android:name=".AllMessageActivity" />
+        <activity android:name=".ChatMessagesActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AdminPanelActivity" />
+        <activity android:name=".AdminBookNameRequestActivity" />
+        <activity android:name=".AdminManageUniqueBooksActivity" />
+        <activity android:name=".AdminBookAddActivity" />
+        <activity android:name=".AdminRonginLibraryActivity" />
+        <activity android:name=".AdminAddBookToRonginActivity" />
+        <activity android:name=".AdminBookBorrowRequestActivity" />
+        <activity android:name=".AdminNotificationBookRquestActivity" />
+        <activity android:name=".AdminNotificationBookGivingRequestActivity" />
+        <activity android:name=".AdminNotificationRecieveBookActivity" />
+        <activity android:name=".AdminNotificationDayRequestActivity" />
+        <activity android:name=".AdminLentBookListActivity" />
+        <activity android:name=".AdminLentBookDetailsActivity" />
+        <activity android:name=".AdminAllMessagesActivity" />
+        <activity android:name=".AdminChatMessagesActivity" />
+        <activity android:name=".AdminAllUsersActivity" />
+        <activity android:name=".AdminUserDetailsActivity" />
+        <activity android:name=".AdminModListActivity" />
+        <activity android:name=".AdminModWorkActivity" />
+        <activity android:name=".AdminGeneralWorkDetailsActivity" />
+        <activity android:name=".MyBookDetailsActivity" />
+        <activity android:name=".AdminRonginBookDetailsActivity" />
+        <activity android:name=".UserLibraryBookAddActivity" />
+        <activity android:name=".GetEmailAddressActivity" />
+        <activity android:name=".SignInWithEmailActivity" />
+        <activity
+            android:name=".RonginSplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".ShowUserBooksActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".AdminAllFeedbackListActivity" />
+        <activity android:name=".AdminFeedbackDetailsActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".DailyQuoteActivity" />
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>

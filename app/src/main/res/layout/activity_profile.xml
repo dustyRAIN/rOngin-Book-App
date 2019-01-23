@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/bg_basic">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pro_pro_pic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/h1_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_default_pro_pic" />
+
+        <TextView
+            android:id="@+id/pro_tv_first_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/pro_tv_last_name"
+            app:layout_constraintEnd_toStartOf="@+id/pro_ic_edit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_pro_pic" />
+
+        <TextView
+            android:id="@+id/pro_tv_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_first_name" />
+
+        <ImageView
+            android:id="@+id/pro_ic_edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pro_tv_first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <EditText
+            android:id="@+id/pro_etv_first_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/pt_sans_bold"
+            android:hint="First Name"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteAAA"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/pro_etv_last_name"
+            app:layout_constraintEnd_toStartOf="@+id/pro_ic_edit"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_pro_pic" />
+
+        <EditText
+            android:id="@+id/pro_etv_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/pt_sans"
+            android:hint="Last Name"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteAAA"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_etv_first_name" />
+
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="email address:"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h1_guideline" />
+
+        <TextView
+            android:id="@+id/pro_tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h1_guideline" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="phone number:"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_email" />
+
+        <TextView
+            android:id="@+id/pro_tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_email" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="latitude:"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_phone" />
+
+        <TextView
+            android:id="@+id/pro_tv_latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_phone" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="longitude:"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_latitude" />
+
+        <TextView
+            android:id="@+id/pro_tv_longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/pro_tv_latitude" />
+
+        <TextView
+            android:id="@+id/pro_location_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:text="* You need to wait some days before you can change location ."
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/h2_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/v1_guideline" />
+
+        <TextView
+            android:id="@+id/pro_tvb_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/touch_selector_perfect_red_background"
+            android:fontFamily="@font/pt_sans_bold"
+            android:paddingBottom="4dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:text="Save Changes"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h2_guideline"
+            app:layout_constraintVertical_bias="0.25" />
+
+
+        <View
+            android:id="@+id/pro_admin_gate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".30" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".80" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

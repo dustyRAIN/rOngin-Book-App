@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "563209015686",
+    "firebase_url": "https://rongin-book-app.firebaseio.com",
+    "project_id": "rongin-book-app",
+    "storage_bucket": "rongin-book-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563209015686:android:c9cabba152b77f74",
+        "android_client_info": {
+          "package_name": "com.creation.daguru.ronginbookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563209015686-4ua70t2leavoq34t7c9msebgctn6iqad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.creation.daguru.ronginbookapp",
+            "certificate_hash": "26679f83ff4b8b3dfe4fd124e8455b9a97d4818d"
+          }
+        },
+        {
+          "client_id": "563209015686-oip35cqugh318mgov0q47amj3d010k6e.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "563209015686-oip35cqugh318mgov0q47amj3d010k6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHWRg9FXAgduPP0eJugVH39S2QX36QQ24"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563209015686-oip35cqugh318mgov0q47amj3d010k6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

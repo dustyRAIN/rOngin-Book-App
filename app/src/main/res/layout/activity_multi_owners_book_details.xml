@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultiOwnersBookDetailsActivity"
+    android:background="@drawable/bg_basic">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBookDeatilsBG"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multi_book_cons_layout_upper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBlack90percent"
+        app:layout_constraintBottom_toTopOf="@+id/multi_book_cons_layout_lower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="5.25">
+
+
+        <ImageView
+            android:id="@+id/books_alligned_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/books_aligned_image" />
+
+        <View
+            android:id="@+id/view_bar_left"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintBottom_toTopOf="@+id/books_alligned_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_bar_top"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_bar_right"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_bar_bottom"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorBorder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/books_alligned_image" />
+
+        <TextView
+            android:id="@+id/multi_book_name"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="end"
+            android:paddingBottom="2dp"
+            android:paddingEnd="16dp"
+            android:text="The Diary of Anne Frank"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/end_bar"
+            app:layout_constraintEnd_toStartOf="@+id/end_bar"
+            app:layout_constraintStart_toEndOf="@+id/view_bar_left" />
+
+        <View
+            android:id="@+id/end_bar"
+            android:layout_width="4dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@+id/view_bar_right"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/view_bar_left"
+            app:layout_constraintTop_toTopOf="@+id/view_bar_top" />
+
+        <View
+            android:id="@+id/start_bar"
+            android:layout_width="4dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@+id/view_bar_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/view_bar_right"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/books_alligned_image"
+            app:layout_constraintTop_toBottomOf="@+id/end_bar" />
+
+        <TextView
+            android:id="@+id/multi_book_author"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|start"
+            android:text="Anne Frank"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/start_bar"
+            app:layout_constraintEnd_toStartOf="@+id/view_bar_right"
+            app:layout_constraintStart_toEndOf="@+id/start_bar" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multi_book_cons_layout_lower"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorBlack30percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multi_book_cons_layout_upper"
+        app:layout_constraintVertical_weight="16">
+
+        <TextView
+            android:id="@+id/multi_owners_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:text="Owners of This Book"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multi_owners_heading">
+
+            <ProgressBar
+                android:id="@+id/multi_book_loading"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/multi_owners_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

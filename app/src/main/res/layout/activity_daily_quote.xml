@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyQuoteActivity"
+    android:background="@drawable/bg_admin">
+
+    <ScrollView
+        android:id="@+id/admin_name_request_respond_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack30percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/last_update_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="last updated: "
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="never"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toEndOf="@+id/last_update_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/actual_quote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorWhite70percent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_horizontal"
+                android:hint="Quote"
+                android:inputType="textMultiLine"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/last_update_label" />
+
+            <EditText
+                android:id="@+id/quote_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorWhite70percent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_horizontal"
+                android:hint="Quote Source"
+                android:inputType="textMultiLine"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/actual_quote" />
+
+            <EditText
+                android:id="@+id/quote_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorWhite70percent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_horizontal"
+                android:hint="Quote Details"
+                android:inputType="textMultiLine"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quote_source" />
+
+            <TextView
+                android:id="@+id/update_quote_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/touch_selector_perfect_red_background"
+                android:fontFamily="@font/pt_sans_bold"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Publish"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quote_details" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

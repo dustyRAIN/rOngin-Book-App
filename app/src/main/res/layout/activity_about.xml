@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@drawable/bg_basic_bright">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:id="@+id/about_rongin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="About rOngin"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rongin_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/about_rongin"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_rongin_label" />
+
+            <ImageView
+                android:id="@+id/img_ic_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/rongin_details"
+                app:layout_constraintTop_toBottomOf="@+id/rongin_details"
+                app:srcCompat="@drawable/icon_facebook" />
+
+            <TextView
+                android:id="@+id/fb_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/pt_sans_narrow_bold"
+                android:text="/dontwastehappiness"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_ic_facebook"
+                app:layout_constraintStart_toEndOf="@+id/img_ic_facebook"
+                app:layout_constraintTop_toTopOf="@+id/img_ic_facebook" />
+
+            <TextView
+                android:id="@+id/about_team_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="About Team"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fb_link" />
+
+            <TextView
+                android:id="@+id/idea_credit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="Idea credit"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_team_label" />
+
+            <TextView
+                android:id="@+id/credit_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Mazadur Rahman Masum"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/idea_credit_label"
+                app:layout_constraintTop_toBottomOf="@+id/idea_credit_label" />
+
+            <TextView
+                android:id="@+id/credit_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Rajesh Chakraborty"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/idea_credit_label"
+                app:layout_constraintTop_toBottomOf="@+id/credit_name_1" />
+
+            <TextView
+                android:id="@+id/managing_team_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="Managing team"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/credit_name_2" />
+
+            <TextView
+                android:id="@+id/manage_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Mazadur Rahman"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/managing_team_label"
+                app:layout_constraintTop_toBottomOf="@+id/managing_team_label" />
+
+            <ImageView
+                android:id="@+id/manage_email_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_1"
+                app:layout_constraintStart_toEndOf="@+id/manage_name_1"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_1"
+                app:srcCompat="@drawable/ic_email" />
+
+            <ImageView
+                android:id="@+id/manage_fb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_1"
+                app:layout_constraintStart_toEndOf="@+id/manage_email_1"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_1"
+                app:srcCompat="@drawable/ic_fb_grey" />
+
+            <TextView
+                android:id="@+id/manage_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Plabon Saha"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/managing_team_label"
+                app:layout_constraintTop_toBottomOf="@+id/manage_name_1" />
+
+            <ImageView
+                android:id="@+id/manage_email_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_2"
+                app:layout_constraintStart_toEndOf="@+id/manage_name_2"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_2"
+                app:srcCompat="@drawable/ic_email" />
+
+            <ImageView
+                android:id="@+id/manage_fb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_2"
+                app:layout_constraintStart_toEndOf="@+id/manage_email_2"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_2"
+                app:srcCompat="@drawable/ic_fb_grey" />
+
+            <TextView
+                android:id="@+id/manage_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Rajesh Chakraborty"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/managing_team_label"
+                app:layout_constraintTop_toBottomOf="@+id/manage_name_2" />
+
+            <ImageView
+                android:id="@+id/manage_email_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_3"
+                app:layout_constraintStart_toEndOf="@+id/manage_name_3"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_3"
+                app:srcCompat="@drawable/ic_email" />
+
+            <ImageView
+                android:id="@+id/manage_fb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_3"
+                app:layout_constraintStart_toEndOf="@+id/manage_email_3"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_3"
+                app:srcCompat="@drawable/ic_fb_grey" />
+
+            <TextView
+                android:id="@+id/manage_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Guru Ananda"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/managing_team_label"
+                app:layout_constraintTop_toBottomOf="@+id/manage_name_3" />
+
+            <ImageView
+                android:id="@+id/manage_email_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/manage_name_4"
+                app:layout_constraintStart_toEndOf="@+id/manage_name_4"
+                app:layout_constraintTop_toTopOf="@+id/manage_name_4"
+                app:srcCompat="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/development_credit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/pt_sans_bold_italic"
+                android:text="App design and development"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/manage_name_4" />
+
+            <TextView
+                android:id="@+id/programmer_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="Guru Ananda"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/development_credit_label"
+                app:layout_constraintTop_toBottomOf="@+id/development_credit_label" />
+
+            <ImageView
+                android:id="@+id/programmer_email_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:layout_constraintStart_toStartOf="@+id/programmer_name_1"
+                app:layout_constraintTop_toBottomOf="@+id/programmer_name_1"
+                app:srcCompat="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/programmer_email_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="guru.ananda.gayen@gmail.com"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/programmer_email_1"
+                app:layout_constraintTop_toBottomOf="@+id/programmer_name_1" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

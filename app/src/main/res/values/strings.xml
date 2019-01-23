@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">rOngin Book App</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+
+    <string name="noti_title_book_added">A Book Added</string>
+    <string name="noti_title_book_confirm">Book to Add</string>
+    <string name="noti_title_book_request">Book Request</string>
+    <string name="noti_title_book_request_reply_accept">Book Request Accepted</string>
+    <string name="noti_title_book_request_reply_deny">Book Request Denied</string>
+    <string name="noti_title_book_request_book_give">Hand Over The Book</string>
+    <string name="noti_title_book_request_book_take">Receive The Book</string>
+    <string name="noti_title_book_receive_returned">Receive a Returned Book</string>
+    <string name="noti_title_more_day_request">Day Limit Increase Request</string>
+    <string name="noti_title_more_day_request_accept">Day Limit Increased</string>
+    <string name="noti_title_more_day_request_deny">Day Limit Didn\'t Increase</string>
+    <string name="noti_title_return_book">Return Book</string>
+    <string name="noti_title_account_freezed">Account is Freezed</string>
+    <string name="noti_title_in_general">New Notification</string>
+
+
+    <string name="noti_desc_book_added">Book \"%s\" was added to your library.</string>
+    <string name="noti_desc_book_confirm">Did you want to add book \"%s\"?</string>
+    <string name="noti_desc_book_request">%s requested for a book.</string>
+    <string name="noti_desc_book_request_reply_accept">%s accepted your book request.</string>
+    <string name="noti_desc_book_request_reply_deny">%s denied your book request</string>
+    <string name="noti_desc_book_request_book_give">%s is ready to borrow the book.</string>
+    <string name="noti_desc_book_request_book_take">Receive a book from %s.</string>
+    <string name="noti_desc_book_receive_returned">%s is returning you a book.</string>
+    <string name="noti_desc_more_day_request">%s wanted more time before returning your book.</string>
+    <string name="noti_desc_more_day_request_accept">%s accepted your request.</string>
+    <string name="noti_desc_more_day_request_deny">%s denied your request.</string>
+    <string name="noti_desc_return_book">Please return book.</string>
+    <string name="noti_desc_account_freezed">Your account is freezed temporarily.</string>
+    <string name="noti_desc_in_general">A new notification to show.</string>
+
+
+    <string name="noti_details_book_request_book_give">%s is here to receive the book. You can hand over the book now. A notification will be sent to him/her after you tap \'Lend\' button. Make sure he/she taps \'Received\' button in that notification. Otherwise DO NOT hand over the book.</string>
+    <string name="noti_details_book_request_book_take">%s should hand over you the book now. Receive the book and please tap the \'Received\' button.</string>
+    <string name="noti_details_book_request_reply_accept">%s has accepted your book request.</string>
+    <string name="noti_details_book_request_reply_deny">%s has denied your request for a book.</string>
+    <string name="noti_details_book_receive_returned">%s is returning you a book. Don\'t forget to tap \'Received\' button after you get back your book.</string>
+
+
+    <string name="update_message_book_added">%s has added a new book.</string>
+    <string name="update_message_book_lent">%s has lent a book.</string>
+
+
+    <string name="book_name_request_dialog_message">As this book hasn\'t been registered into our database, you can\'t insert this book right now. However, a notification to add this book has been sent. Please give us at maximum 24 hours. We will notify you.</string>
+
+    <string name="title_activity_rongin_splash_screen">RonginSplashScreenActivity</string>
+
+    <string name="about_rongin">rOngin is a voluntary organization, initiated by some BUETians, which is working on different issues to reduce the sufferings of the deprived people of the society. Team rOngin has been successfully working to accumulate the excess food or old clothings to help the people in need, spreading the joy of sharing, empathy and compassion.</string>
+</resources>

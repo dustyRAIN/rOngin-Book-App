@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/allan</item>
+        <item>@font/allan_bold</item>
+        <item>@font/allura</item>
+        <item>@font/anton</item>
+        <item>@font/archivo_narrow_bold</item>
+        <item>@font/arima_madurai_black</item>
+        <item>@font/arima_madurai_extrabold</item>
+        <item>@font/arima_madurai_medium</item>
+        <item>@font/arimo_bold</item>
+        <item>@font/assistant_extrabold</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/courgette</item>
+        <item>@font/galada</item>
+        <item>@font/pt_sans</item>
+        <item>@font/pt_sans_bold</item>
+        <item>@font/pt_sans_bold_italic</item>
+        <item>@font/pt_sans_italic</item>
+        <item>@font/pt_sans_narrow</item>
+        <item>@font/pt_sans_narrow_bold</item>
+    </array>
+</resources>

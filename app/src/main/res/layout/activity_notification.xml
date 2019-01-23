@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity"
+    android:background="@drawable/bg_basic">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRongLibBG">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/noti_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRecViewBG"/>
+
+        <TextView
+            android:id="@+id/noti_no_noti_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="No notification to show."
+            android:textColor="@color/colorWhiteAAA"
+            android:textSize="18sp"
+            android:background="@color/colorRecViewBG"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/noti_loading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

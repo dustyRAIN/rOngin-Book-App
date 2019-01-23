@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RonginSplashScreenActivity">
+
+
+    <ImageView
+        android:id="@+id/splash_img_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rongin_splash_logo"
+        app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+        app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+        app:layout_constraintTop_toTopOf="@+id/h1_guideline" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v1_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v2_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h1_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".42" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h2_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8" />
+
+    <TextView
+        android:id="@+id/splash_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="A DaGuru Creation."
+        android:textColor="@color/colorWhiteAAA"
+        android:fontFamily="@font/pt_sans_italic"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+        app:layout_constraintStart_toStartOf="@+id/v1_guideline" />
+
+    <TextView
+        android:id="@+id/splash_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/arima_madurai_medium"
+        android:text="Checking internet connection, please wait"
+        android:textColor="@color/colorWhiteAAA"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+        app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+        app:layout_constraintTop_toTopOf="@+id/h2_guideline" />
+
+</android.support.constraint.ConstraintLayout>

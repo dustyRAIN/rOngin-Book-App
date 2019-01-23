@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_admin"
+    tools:context=".AdminAddBookToRonginActivity">
+
+    <ScrollView
+        android:id="@+id/admin_name_request_respond_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack30percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/admin_name_book_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/pt_sans_bold"
+                android:hint="Search for the book"
+                android:textColorHint="@color/colorWhite"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/admin_name_searched_book"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/admin_name_searched_book_cancel"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Bhindeshi Tara" />
+
+            <TextView
+                android:id="@+id/admin_name_searched_book_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:text="X"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/admin_name_searched_book"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintTop_toTopOf="@+id/admin_name_searched_book" />
+
+            <EditText
+                android:id="@+id/admin_name_book_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:hint="Author name"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_book_search" />
+
+            <TextView
+                android:id="@+id/admin_name_tv_book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_searched_book"
+                tools:text="Sampa Halder" />
+
+            <EditText
+                android:id="@+id/admin_name_keyword_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:hint="key word"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_book_author" />
+
+            <EditText
+                android:id="@+id/admin_name_keyword_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/pt_sans_bold"
+                android:hint="key word"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_keyword_1" />
+
+            <EditText
+                android:id="@+id/admin_name_keyword_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/pt_sans_bold"
+                android:hint="key word"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_keyword_2" />
+
+
+            <TextView
+                android:id="@+id/admin_name_tv_keyword_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="key word"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/v2_guideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_tv_book_author" />
+
+            <TextView
+                android:id="@+id/admin_name_tv_keyword_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="key word"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/v2_guideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_tv_keyword_1" />
+
+            <TextView
+                android:id="@+id/admin_name_tv_keyword_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="key word"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/v2_guideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/v1_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/admin_name_tv_keyword_2" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/v1_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".05" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/v2_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".95" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/h1_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".50" />
+
+            <TextView
+                android:id="@+id/admin_name_add_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="300dp"
+                android:background="@color/colorPerfectRonginRed"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="Add To Rongin Library"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

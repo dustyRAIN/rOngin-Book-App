@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationBookReceivedActivity"
+    android:background="@drawable/bg_basic_bright">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary25percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/noti_take_book_greet_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:text="Hey,"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/v1_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h1_guideline" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@id/h2_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/v2_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/noti_take_book_greet_user">
+
+            <TextView
+                android:id="@+id/noti_take_book_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="should hand over you the book now. Receive the book and please tap the 'Received' button"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </ScrollView>
+
+
+
+
+        <TextView
+            android:id="@+id/noti_lebel_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="book"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/h2_guideline" />
+
+        <TextView
+            android:id="@+id/noti_take_book_book_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="start"
+            android:text="A Tale of Two Cities"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider1"
+            app:layout_constraintTop_toTopOf="@+id/view_divider1" />
+
+
+        <TextView
+            android:id="@+id/noti_take_book_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/touch_selector_black_background"
+            android:fontFamily="@font/pt_sans_bold"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Received"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/noti_take_book_false"
+            app:layout_constraintTop_toTopOf="@+id/h4_guideline"
+            app:layout_constraintVertical_bias="0.1000000" />
+
+        <TextView
+            android:id="@+id/noti_take_book_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/touch_selector_black_background"
+            android:fontFamily="@font/pt_sans_bold"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:text="Didn't Receive"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/noti_take_book_true"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/h4_guideline"
+            app:layout_constraintVertical_bias="0.1000000" />
+
+
+        <TextView
+            android:id="@+id/noti_lebel_requested_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="borrow from"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider2"
+            app:layout_constraintStart_toStartOf="@+id/view_divider2"
+            app:layout_constraintTop_toTopOf="@+id/view_divider2" />
+
+        <View
+            android:id="@+id/view_divider2"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@id/h3_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline" />
+
+
+        <ImageView
+            android:id="@+id/noti_take_book_pro_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/h4_guideline"
+            app:layout_constraintStart_toStartOf="@+id/v2_guideline"
+            app:layout_constraintTop_toTopOf="@+id/h3_guideline"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_default_pro_pic" />
+
+        <TextView
+            android:id="@+id/noti_take_book_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans_bold_italic"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/noti_take_book_pro_pic"
+            app:layout_constraintEnd_toStartOf="@+id/v5_guideline"
+            app:layout_constraintStart_toEndOf="@+id/noti_take_book_pro_pic"
+            app:layout_constraintTop_toBottomOf="@+id/noti_take_book_pro_pic" />
+
+
+        <TextView
+            android:id="@+id/noti_lebel_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans_italic"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="for"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider3"
+            app:layout_constraintEnd_toEndOf="@+id/view_divider3"
+            app:layout_constraintTop_toTopOf="@+id/view_divider3" />
+
+        <View
+            android:id="@+id/view_divider3"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/h5_guideline" />
+
+        <TextView
+            android:id="@+id/noti_take_book_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="start"
+            android:text="60 days"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_divider3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_divider3"
+            app:layout_constraintTop_toTopOf="@+id/view_divider3" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h4_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".80" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".7" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".06" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".28" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".88" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232323</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorUpperBG">#59969696</color>
+    <color name="colorLowerBG">#33201010</color>
+    <color name="colorUpdateBG">#66000000</color>
+    <color name="colorTransPrimary">#E6232323</color>
+    <color name="colorTransBG">#4D2E2E2E</color>
+    <color name="colorSignInTVText">#dddddd</color>
+    <color name="colorSignInTextColorHint">#d4d3d3</color>
+    <color name="colorSignInButtonBG">#B3000000</color>
+    <color name="colorTransWhite">#E6dddddd</color>
+    <color name="colorTabIndicator">#444444</color>
+    <color name="colorWhiteAAA">#aaaaaa</color>
+    <color name="colorTabColorSelected">#1c1c1c</color>
+    <color name="colorRongLibBG">#992e2e2e</color>
+    <color name="colorRecViewBG">#99000000</color>
+    <color name="colorBookDeatilsBG">#591e1e1e</color>
+    <color name="colorBlack90percent">#E6000000</color>
+    <color name="colorBlack80percent">#CC000000</color>
+    <color name="colorWarning">#ed2024</color>
+    <color name="colorPositive">#18881b</color>
+    <color name="colorBorder">#5d5d5d</color>
+    <color name="colorBlack30percent">#4d000000</color>
+    <color name="colorPrimary25percent">#262e2e2e</color>
+    <color name="colorTypeMessageArea">#dbdbdb</color>
+    <color name="colorPerfectRonginRed">#7b0808</color>
+    <color name="colorChatInMsgBG">#e0e0e0</color>
+    <color name="colorChatOutMsgBG">#202020</color>
+    <color name="colorWhite70percent">#B3ffffff</color>
+    <color name="colorPrimarySelected">#3e3e3e</color>
+    <color name="colorListItemSelected">#404040</color>
+    <color name="colorPerfectRedSelected">#a32323</color>
+    <color name="colorBlackSelected">#232323</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
